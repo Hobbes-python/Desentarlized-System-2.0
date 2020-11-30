@@ -731,8 +731,22 @@ public class driver {
                         {0},{1},{1},{0}
        };
        
-       public
-
+       public static void main (string[] args){
+       		neuralNetwork nn = new neuralNetwork(2,10,1);
+		
+		
+		list<Double>output;
+		
+		nn.fit(X,Y 50000);
+		double [][]input = {
+				{0,0},{0,1},{1,0},{1,1}
+	        for(double d[]:input)
+		{
+			output = nn.predict(d);
+			system.out.println(output.toString());
+		}
+	}
+}
 
 
 
